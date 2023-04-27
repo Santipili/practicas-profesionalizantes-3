@@ -1,0 +1,97 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="calculadora.css">  
+</head>
+
+<body>
+
+    <div class="calculator">
+        <div class="display">
+          <span id="result">0</span>
+        </div>
+
+        <div class="numbers">
+        <button onclick="showToDisplay('7')">7</button>
+        <button onclick="showToDisplay('8')">8</button>
+        <button onclick="showToDisplay('9')">9</button>
+        
+        <button onclick="showToDisplay('4')">4</button>
+        <button onclick="showToDisplay('5')">5</button>
+        <button onclick="showToDisplay('6')">6</button>
+        
+        <button onclick="showToDisplay('3')">3</button>
+        <button onclick="showToDisplay('2')">2</button>
+        <button onclick="showToDisplay('1')">1</button>
+        
+        <button onclick="showToDisplay('0')">0</button>
+        <button onclick="showToDisplay('.')">.</button>
+        <button onclick="calculate()">=</button>
+        </div>
+        
+        <div class="operations">
+        <button onclick="showToDisplay('+')">+</button>
+        <button onclick="showToDisplay('-')">-</button>
+        <button onclick="showToDisplay('*')">x</button>
+        <button onclick="showToDisplay('/')">÷</button>
+        </div>
+            
+        <button onclick="clearDisplay()" id="_clear">C</button>
+
+      </div>
+    
+      <script type="text/javascript" src="calculadora.js"></script>
+
+
+</body>
+ -->
+
+<!-- //////////////////Version 0.2/////////////////////// -->
+
+
+<!DOCTYPE html>
+
+<head>
+	<title>Calculadora</title>
+	<link rel="stylesheet" type="text/css" href="calculadora.css">
+</head>
+<body>
+
+<div class="calculator"  >
+
+    <div class="display">
+        <span id="result">0</span> 
+    </div>
+
+    <div class="text_display">
+        
+        <button class="number" onclick="showToDisplay('7')">7</button>
+        <button class="number" onclick="showToDisplay('8')">8</button>
+        <button class="number" onclick="showToDisplay('9')">9</button>
+        <button class="operation" onclick="showToDisplay('+')">+</button>
+        <button class="number" onclick="showToDisplay('4')">4</button>
+        <button class="number" onclick="showToDisplay('5')">5</button>
+        <button class="number" onclick="showToDisplay('6')">6</button>
+        <button class="operation" onclick="showToDisplay('-')">-</button>
+        <button class="number" onclick="showToDisplay('3')">3</button>
+        <button class="number" onclick="showToDisplay('2')">2</button>
+        <button class="number" onclick="showToDisplay('1')">1</button>
+        <button class="operation" onclick="showToDisplay('*')">*</button>
+        <button class="number" onclick="showToDisplay('0')">0</button>
+        <button class="number" onclick="showToDisplay('.')">.</button>
+        <button class="equal" onclick="calculate()">=</button>
+        <button class="operation" onclick="showToDisplay('/')">/</button>
+    </div>
+  
+    <button class="clear" onclick="clearDisplay()">borrar</button>
+
+</div>
+
+<script type="text/javascript" src="calculadora.js"></script>
+
+</body>
+
+
