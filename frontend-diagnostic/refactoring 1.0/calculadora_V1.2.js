@@ -1,36 +1,37 @@
 window.addEventListener('load', startApp);
 
+let result = document.createElement('span');
+
 function clearDisplay() {
   result.innerHTML = '';
 }
 
 function calculate() {
-  result.innerHTML = eval(result.innerHTML)
+  result.innerHTML = eval(result.innerHTML);
 }
 
-let display = document.createElement('div');
-let result = document.createElement('span');
-
 function startApp() {
+//---------------------------------------------------------------------------------------
     // creacion de los elemnetos con todas las etiquetas necesarias
+
     let calculator = document.createElement('div');
+
+    let display = document.createElement('div');
+
+    let textToDisplay = document.createElement('div');
 
     let btnNumbers = [];
     for (let i=0; i <10; i++ ) {
       btnNumbers[i] = document.createElement('button');
     }
-    let textToDisplay = document.createElement('div');
 
     let btnOperationPlus = document.createElement('button');
-
     let btnOperationSubstract = document.createElement('button');
-
     let btnOperationMultiply = document.createElement('button');
-
-    let btnComa = document.createElement('button');
-    let btnEqual = document.createElement('button');
     let btnOperationDivide = document.createElement('button');
 
+    let btnComa = document.createElement('button');
+    let btnEqual = document.createElement('button');   
     let btnClear = document.createElement('button');
 
 //------------------------------------------------------------------------------------------------
@@ -69,12 +70,13 @@ function startApp() {
     document.body.appendChild(calculator);
 
 //------------------------------------------------------------------------------------
-    // asignando clase a cada etiqueta 
+    // asignando clases a cada etiqueta 
+
     calculator.classList.add('calculator');
 
     display.classList.add('display');
 
-    textToDisplay.classList.add('text_display');
+    textToDisplay.classList.add('text_to_display');
 
     btnOperationPlus.classList.add('operation');
     btnOperationSubstract.classList.add('operation');
@@ -84,11 +86,17 @@ function startApp() {
     btnEqual.classList.add('equal');
 
     btnClear.classList.add('clear');
-
+   
     btnComa.classList.add('number');
     for (let i=0; i <10; i++ ) {
       btnNumbers[i].classList.add('number');
-      btnNumbers[i].classList.add('button_classic');
+
+    }
+
+    btnClear.classList.add('button_classic');
+    let someChildren = textToDisplay.children;
+    for (let i = 0; i < someChildren.length; i++) {
+      someChildren[i].classList.add('button_classic');
     }
 
 //-------------------------------------------------------------------------------------
@@ -109,13 +117,12 @@ function startApp() {
       btnNumbers[i].innerHTML= i;
     }
 
-
 //----------------------------------------------------------------------------------------------
     // agrego las funcionalidades de los botones 
-    // ------ aqui podria hacer un bucle para disminuir lineas, agregando los botones en un arreglo -------
-
     
-    for (let i=0; i <10; i++ ) { btnNumbers[i].onclick =() =>{result.innerHTML += i}; }
+    for (let i=0; i <10; i++ ) { 
+      btnNumbers[i].onclick =() =>{result.innerHTML += i};
+    }
 
     btnComa.onclick =() =>{result.innerHTML += "."};
 

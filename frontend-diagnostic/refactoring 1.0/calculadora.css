@@ -6,14 +6,6 @@
     margin:  auto;
 }
 
-.text_display {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-    padding: 10px;
-    
-}
-  
 .display {
     display:block;
     width: 280px;
@@ -27,61 +19,49 @@
     border-color: #BEBEBE;
     border-width: 1px;
   }
-  
-  .number {
-    background-color: #4286f4;
-    color: #fff;
-    box-shadow: 0px 5px #296cd7;
-    /* border: none;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 20px;
-    cursor: pointer; */
-  }
-  
-  .operation {
-    background-color: #3dc84d;
-    color: #fff;
-    box-shadow: 0px 5px #289d3c;
-    /* border: none;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 20px;
-    cursor: pointer; */
-  }
-  
-  .clear {
-    background-color: #e64c4c;
-    color: #fff;
-    box-shadow: 0px 5px #c63b3b;
-    /* border: none;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 20px;
-    cursor: pointer; */
-    width:290px;
-    margin: 5px ;
-  }
-  
- .number:active, .operation:active, .equal:active, .clear:active{
-    transform: translateY(2px);
-  }
 
-  .equal {
-    background-color: #EBE011;
-    color: #fff;
-    box-shadow: 0px 5px #EBC11C;
-    /* border: none;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 20px;
-    cursor: pointer; */
-  }
+  .text_to_display {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 10px; 
+}
 
   .button_classic {
+    color: #fff;
     border: none;
     border-radius: 5px;
     padding: 10px;
     font-size: 20px;
     cursor: pointer;
   }
+
+  .number {
+    background-color: #4286f4;
+    box-shadow: 0px 5px #296cd7;
+  }
+  
+  .operation {
+    background-color: #3dc84d;
+    box-shadow: 0px 5px #289d3c;
+  }
+
+  .equal {
+    background-color: #EBE011;
+    box-shadow: 0px 5px #EBC11C;
+  }
+  
+  .clear {
+    background-color: #e64c4c;
+    box-shadow: 0px 5px #c63b3b;
+    width:290px;
+    margin: 5px ;
+  }
+  
+ .button_classic:active{
+    transform: translateY(2px);
+  }
+
+
+
+  
