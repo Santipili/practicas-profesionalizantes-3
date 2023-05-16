@@ -32,33 +32,33 @@
     background-color: #4286f4;
     color: #fff;
     box-shadow: 0px 5px #296cd7;
-    border: none;
+    /* border: none;
     border-radius: 5px;
     padding: 10px;
     font-size: 20px;
-    cursor: pointer;
+    cursor: pointer; */
   }
   
   .operation {
     background-color: #3dc84d;
     color: #fff;
     box-shadow: 0px 5px #289d3c;
-    border: none;
+    /* border: none;
     border-radius: 5px;
     padding: 10px;
     font-size: 20px;
-    cursor: pointer;
+    cursor: pointer; */
   }
   
   .clear {
     background-color: #e64c4c;
     color: #fff;
     box-shadow: 0px 5px #c63b3b;
-    border: none;
+    /* border: none;
     border-radius: 5px;
     padding: 10px;
     font-size: 20px;
-    cursor: pointer;
+    cursor: pointer; */
     width:290px;
     margin: 5px ;
   }
@@ -71,6 +71,14 @@
     background-color: #EBE011;
     color: #fff;
     box-shadow: 0px 5px #EBC11C;
+    /* border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer; */
+  }
+
+  .button_classic {
     border: none;
     border-radius: 5px;
     padding: 10px;

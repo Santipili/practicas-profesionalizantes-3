@@ -7,7 +7,6 @@ function clearDisplay() {
 function calculate() {
   result.innerHTML = eval(result.innerHTML)
 }
-// import "./calculadora.js";
 
 let display = document.createElement('div');
 let result = document.createElement('span');
@@ -70,26 +69,27 @@ function startApp() {
     document.body.appendChild(calculator);
 
 //------------------------------------------------------------------------------------
-    // asignando clase clase a cada etiqueta 
+    // asignando clase a cada etiqueta 
     calculator.classList.add('calculator');
+
     display.classList.add('display');
+
     textToDisplay.classList.add('text_display');
 
     btnOperationPlus.classList.add('operation');
     btnOperationSubstract.classList.add('operation');
     btnOperationMultiply.classList.add('operation');
     btnOperationDivide.classList.add('operation');
-  
-    btnComa.classList.add('number');
+
     btnEqual.classList.add('equal');
-    
+
     btnClear.classList.add('clear');
 
+    btnComa.classList.add('number');
     for (let i=0; i <10; i++ ) {
       btnNumbers[i].classList.add('number');
+      btnNumbers[i].classList.add('button_classic');
     }
-
-
 
 //-------------------------------------------------------------------------------------
     // asigno los textos internos de cada boton
