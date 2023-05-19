@@ -1,0 +1,47 @@
+[33mcommit 0b76f6c9a6e84ab42bd64e209a5d1bbfac716a31[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Santipili <Santipili@atlassian.com>
+Date:   Fri May 12 17:23:11 2023 -0300
+
+    refactorice la version 1 y cree y maneje los botones numericos con un arreglo
+
+[33mcommit 73f821f34746054cea7ac45e12be2d0a04a7a070[m
+Author: Santipili <Santipili@atlassian.com>
+Date:   Fri May 12 16:24:22 2023 -0300
+
+    ordenamiento de primera version de la calculadora y refactoring 1
+
+[33mcommit 25fe288875d32c37aadd242da6eda2d13ceea221[m
+Author: Santipili <Santipili@atlassian.com>
+Date:   Thu Apr 27 19:01:28 2023 -0300
+
+    cambie el nombre a la carpeta de la version 1.0 de la calculadora
+
+[33mcommit a052f9edfa4801d12f57f0e2d8ff8ed5918cd509[m
+Author: Santipili <Santipili@atlassian.com>
+Date:   Thu Apr 27 18:59:13 2023 -0300
+
+    diagrama de base de datos de fixture de mundial de futbol
+
+[33mcommit e4f5ab15189fba0a97c6f0df9696a399a11702b2[m
+Author: Santipili <Santipili@atlassian.com>
+Date:   Thu Apr 27 18:20:31 2023 -0300
+
+    actualizo la calculadora V 1.0
+
+[33mcommit 24379a46167d1ce3019c3e81dae13bdd35208d59[m
+Author: Santipili <Santipili@atlassian.com>
+Date:   Thu Apr 27 18:16:38 2023 -0300
+
+    elimine la carpeta
+
+[33mcommit a030f576ffba607a8a8b7625a3f3865d52f83d53[m
+Author: Santipili <Santipili@atlassian.com>
+Date:   Thu Apr 27 18:05:51 2023 -0300
+
+    calculadora con JS v 1.0
+
+[33mcommit cc73c63e1d44b38f4a8d8949a88772c0e6246770[m
+Author: Santiago Pili <82980343+Santipili@users.noreply.github.com>
+Date:   Thu Apr 13 21:12:02 2023 -0300
+
+    Initial commit
