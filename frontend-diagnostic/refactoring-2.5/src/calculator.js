@@ -11,5 +11,5 @@ class calculator
     }
 }
 
-export {calculator};
+ export {calculator};
 

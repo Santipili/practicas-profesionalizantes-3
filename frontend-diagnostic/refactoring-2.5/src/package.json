@@ -1,0 +1,12 @@
+{
+    "name": "calculator",
+    "version": "2.5.5",
+    "description": "",
+    "main": "startApp.js",
+    "type":"module",
+   
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Santipili/practicas-profesionalizantes-3/tree/main/frontend-diagnostic/refactoring-2.5"
+    }
+  }
