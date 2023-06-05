@@ -42,7 +42,8 @@ function processRequire(req, res){
         //const path = parsedUrl.pathname; (URL/<<nombrederecurso>>?... ) "/quericocho" en mi ejemplo
 
         let expression = query.expression.trim();
-        expression = expression.replace(/^0+(?=\d)/, "");
+        expression = expression.replace(/^0+(?=\d)/, ""); 
+        //cuando un numero empieza con 0, lo toma en base 8 y tira error, por eso le quitamos los ceros delanteros
     
         let modelEvaluate = new modelServer();
         let result = modelEvaluate.calculate(expression);

@@ -1,21 +1,29 @@
+//este modelo deberia tener un solo metodo, pero por cuestiones de aprendizaje cree la peticion utilizando POST y GET
+
 class modelFront{
     constructor(){  
           
     }
   
-    async calculate(expresion){
+    //Metodo utilizando POST
+    async calculateByPOST(expression){
 
         try{
-            let DataTransfer ={
-                method:"POST",
-                body: expresion
+            if (expression != null && expression !== "") {
+                let DataTransfer ={
+                    method:"POST",
+                    body: expression
+                }
+        
+                let response = await fetch('http://localhost:3000/', DataTransfer );
+        
+                let responseJSON = await response.json();
+    
+                return responseJSON
             }
-    
-            let response = await fetch('http://localhost:3000/', DataTransfer );
-    
-            let responseJSON = await response.json();
-
-            return responseJSON
+            else {
+                alert("ERROR!! You can't evaluate empty data");
+            } 
         }
         catch(error){
             console.log(error);
@@ -23,10 +31,10 @@ class modelFront{
 
     }
 
-    async calculate2(expression){
+    //metodo utilizando GET
+    async calculateByGET(expression){
          
         try{          
-        
             if (expression != null && expression !== "") {
                 const url = `http://localhost:3000/quericocho?expression=${encodeURIComponent(expression)}` ;
         
@@ -37,7 +45,7 @@ class modelFront{
                 return responseJSON;
             }
             else {
-                alert("error you can't evaluate empty data");
+                alert("ERROR!! You can't evaluate empty data");
             }  
         }
         catch(error){

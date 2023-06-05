@@ -63,7 +63,7 @@ class controller{
 
     async solveExpression() {
 
-        this.innerModel.calculate(this.innerView.result.innerHTML).then(response =>{
+        this.innerModel.calculateByPOST(this.innerView.result.innerHTML).then(response =>{
             this.innerView.result.innerHTML = response.message;
             })
 
