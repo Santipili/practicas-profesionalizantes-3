@@ -7,4 +7,5 @@ class modelServer{
     }
 };
 
-export {modelServer};
+module.exports = { modelServer: modelServer };
+// export {modelServer}; "esto no me lo permitia hacer"

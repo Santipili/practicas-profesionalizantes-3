@@ -1,6 +1,6 @@
-import { modelFront } from './model/model.js';
-import { view } from './view/view.js';
-import { controller } from './controller/controller.js';
+import { modelFront } from './frontend/src/model/model.js';
+import { view } from './frontend/src/view/view.js';
+import { controller } from './frontend/src/controller/controller.js';
 
 class calculator
 {

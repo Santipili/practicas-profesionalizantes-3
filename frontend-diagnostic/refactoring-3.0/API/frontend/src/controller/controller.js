@@ -24,7 +24,7 @@ class controller{
         this.innerView.btnOperationMultiply.onclick =() =>{this.innerView.result.innerHTML += "*"};
         this.innerView.btnOperationDivide.onclick =() =>{this.innerView.result.innerHTML += "/"};
       
-        this.innerView.btnEqual.addEventListener('click', ()=>{ this.calculate() } );
+        this.innerView.btnEqual.addEventListener('click', ()=>{ this.solveExpression() } );
         this.innerView.btnClear.addEventListener('click', ()=>{ this.clearDisplay() } );
        
 
@@ -61,8 +61,12 @@ class controller{
         this.innerView.result.innerHTML += 9;
     }
 
-    calculate(expresion) {
-        this.innerView.result.innerHTML = this.innerModel.calculate(this.innerView.result.innerHTML);
+    async solveExpression() {
+
+        this.innerModel.calculate(this.innerView.result.innerHTML).then(response =>{
+            this.innerView.result.innerHTML = response.message;
+            })
+
     }
 
     clearDisplay() {
