@@ -1,10 +1,13 @@
 class model{
-    constructor(){        
+    constructor(){  
+          
     }
+   
   
     calculate(expresion){
+        
         return eval(expresion);
     }
 };
 
-export {model};
+export {modelFront};

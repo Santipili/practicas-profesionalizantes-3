@@ -1,0 +1,7 @@
+{
+    "name": "calculadora",
+    "version": "3.0.0",
+    "main": "index.js",
+    "author": "Santiago Pili",
+    "license": "GNU"
+  }
