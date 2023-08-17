@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Filtrar tabla</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h2>Tabla de datos</h2>
+    <input type="text" id="filtro" placeholder="Filtrar por nombre">
+    <table id="miTabla">
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Usuario1</td>
+            <td>25</td>
+            <td>usuario1@example.com</td>
+        </tr>
+        <tr>
+            <td>Usuario2</td>
+            <td>30</td>
+            <td>usuario2@example.com</td>
+        </tr>
+        <tr>
+            <td>Usuario3</td>
+            <td>28</td>
+            <td>usuario3@example.com</td>
+        </tr>
+    </table>
+
+    <script>
+        const filtroInput = document.getElementById('filtro');
+        const tabla = document.getElementById('miTabla');
+        const filas = tabla.getElementsByTagName('tr');
+
+        filtroInput.addEventListener('keyup', function() {
+            const filtro = filtroInput.value.toLowerCase();
+            for (let i = 1; i < filas.length; i++) {
+                const nombreCelda = filas[i].getElementsByTagName('td')[0];
+                if (nombreCelda) {
+                    const contenido = nombreCelda.innerText.toLowerCase();
+                    if (contenido.includes(filtro)) {
+                        filas[i].style.display = '';
+                    } else {
+                        filas[i].style.display = 'none';
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
