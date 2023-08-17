@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E6F3FF; /* Fondo celeste */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+#formulario {
+    width: 300px;
+    background-color: #B3D9FF; /* Fondo celeste más oscuro */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.grilla {
+    width: 500px;
+    background-color: #80BFFF; /* Fondo celeste más claro */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: #003566; /* Tono de texto azul */
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, select {
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 200px;
+    background-color: white;
+}
+
+
+
+.create {
+    padding: 10px;
+    background-color: #0080FF; /* Azul más claro */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.create:hover {
+    background-color: #0059B3; /* Azul más oscuro al pasar el cursor */
+}
+
+
+table
+{
+    width: 450px;
+    border: 1px solid black;
+    /* border-collapse: collapse; */
+    /* margin-left: 10px; */
+}
+
+th,td,tr {
+    width: 100px;
+  text-align: center;
+  font:bold;
+}
+
+.deleteButton, .updateButton, .saveButton {
+    background-color: #80BFFF;
+    margin-right: 10px;
+    padding: 12px;
+    padding-bottom: 1pc;
+    border: none;
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.deleteButton{
+    background-image: url(./recycle-bin-2.png);
+}
+
+.updateButton{
+    background-image: url(./interface-edit-pen-tool.png);
+}
+
+.saveButton{
+    background-image: url(./actualizar.png);
+}
+
+.deleteButton:hover, .updateButton:hover {
+    transform: scale(1.3);
+}
+
+.saveButton:hover{
+    transform: scale(1.1);
+}
+
+.inputUpdate{
+    width: 100px;
+    text-align: center;
+}
+
+.friends {
+    background-color: green;
+}
+
+.jobs{
+    background-color: gray;
+
+}
+
+.study{
+    background-color: pink;
+}
+
+.family{
+    background-color: violet;
+}
+
+.favorite{
+    background-color: lightcyan;
+}
+
+.service{
+    background-color: lightseagreen;
+}
